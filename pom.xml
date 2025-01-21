@@ -139,7 +139,6 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-        <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-guice</artifactId>
             <version>7.0.0</version>
