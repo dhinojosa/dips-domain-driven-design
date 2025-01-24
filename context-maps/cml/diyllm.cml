@@ -17,7 +17,7 @@ ContextMap DIYLLM {
     }
 }
 
-BoundedContext CustomerContext
+BoundedContext CustomerContext implements CustomerRelationship, Marketing
 BoundedContext OpsContext
 BoundedContext TrainingContext
 BoundedContext MonitoringContext
