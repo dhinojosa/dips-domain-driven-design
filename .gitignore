@@ -11,3 +11,7 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 .idea
 .jqwik-database
+context-maps/cml/*.gv
+context-maps/cml/*.png
+context-maps/cml/*.svg
+context-mapper-cli-6.12.0
