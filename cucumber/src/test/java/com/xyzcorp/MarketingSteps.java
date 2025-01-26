@@ -1,15 +1,24 @@
 package com.xyzcorp;
 
-import io.cucumber.java.PendingException;
+import com.google.inject.Inject;
+import io.cucumber.guice.ScenarioScoped;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+@ScenarioScoped
 public class MarketingSteps {
     private Prospect prospect;
+
+    @Inject
     private RequestService requestService;
+
+    @Inject
     private EmailService emailService;
+
+    @Inject
     private MessageService messageService;
+
 
     @Given("a prospect")
     public void aProspect() {

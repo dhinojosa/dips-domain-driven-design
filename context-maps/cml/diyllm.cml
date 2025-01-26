@@ -15,11 +15,15 @@ ContextMap DIYLLM {
     OpsContext[U,PL]->[D,ACL] MonitoringContext {
             implementationTechnology = "Kafka"
     }
+
+    CustomerContext[U, OHS] -> [D, ACL] TrainingContext
+
+
 }
 
 BoundedContext CustomerContext implements CustomerRelationship, Marketing
 BoundedContext OpsContext
-BoundedContext TrainingContext
+BoundedContext TrainingContext implements Training
 BoundedContext MonitoringContext
 
 Domain DIYLLMDomain {
